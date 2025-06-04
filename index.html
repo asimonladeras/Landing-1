@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consultoría para Creadores</title>
+<style>
+ body {margin:0;font-family: Arial, Helvetica, sans-serif;background:#0f1116;color:#f2f2f2;line-height:1.6;}
+ a{color:#fff;text-decoration:none;}
+ header,section,footer{padding:60px 20px;max-width:1200px;margin:auto;}
+ h1,h2,h3{margin-top:0;font-weight:600;}
+ .hero{display:flex;flex-direction:column;align-items:center;text-align:center;gap:20px;}
+ .hero img{width:200px;height:200px;border-radius:50%;object-fit:cover;}
+ .cta-btn{background:#1e88e5;padding:15px 30px;border:none;border-radius:4px;color:#fff;font-size:1rem;cursor:pointer;}
+ .sticky-cta{position:fixed;bottom:20px;right:20px;z-index:1000;}
+ .problem{background:#1b1d23;}
+ .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+ .grid-4{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;}
+ .logos img{width:100px;opacity:0.6;}
+ .testimonials{display:grid;gap:20px;}
+ .testimonial{background:#1b1d23;padding:15px 20px;border-radius:20px;max-width:500px;display:flex;align-items:flex-start;}
+ .testimonial img{width:40px;height:40px;border-radius:50%;margin-right:10px;}
+ .testimonial p{margin:0;}
+ table{width:100%;border-collapse:collapse;}
+ th,td{border:1px solid #444;padding:10px;text-align:left;}
+ video{max-width:100%;border-radius:8px;}
+ @media(max-width:600px){
+  header,section,footer{padding:40px 15px;}
+  .sticky-cta{bottom:10px;right:10px;}
+ }
+</style>
+<script>
+ function updateCTA() {
+   const select = document.getElementById('creatorType');
+   const ctas = document.querySelectorAll('.cta-btn');
+   ctas.forEach(btn => btn.textContent = `Aplicar al diagnóstico (${select.value})`);
+ }
+</script>
+</head>
+<body>
+ <header class="hero">
+  <h1>No vendo cursos. Construyo negocios con creadores.</h1>
+  <p>Ex-consultor de multinacionales. Ahora aplico esa estrategia a creadores con visión real.</p>
+  <video src="video-placeholder.mp4" controls poster="poster.jpg"></video>
+  <label for="creatorType">Soy creador con...</label>
+  <select id="creatorType" onchange="updateCTA()">
+   <option value="audiencia consolidada">audiencia consolidada</option>
+   <option value="proyecto en marcha">proyecto en marcha</option>
+   <option value="ganas de escalar">ganas de escalar</option>
+  </select>
+  <a href="#apply" class="cta-btn">Aplicar al diagnóstico</a>
+ </header>
+ <section class="problem">
+  <h2>Tienes audiencia. Pero no tienes sistema.</h2>
+  <p>El caos silencioso: lanzas cosas sin rumbo, dependes de views y sigues sin claridad.</p>
+  <p>Es como tener un estadio lleno, pero sin partido. Todo el mundo te mira, pero no pasa nada dentro.</p>
+  <p>Tú ya tienes propósito. Lo que te falta es dirección estratégica para convertirlo en un negocio real.</p>
+ </section>
+ <section class="about">
+  <h2>Fui consultor. Me aburrí. Ahora trabajo con creadores porque aquí todo importa: tu historia, tu estilo, tu ambición.</h2>
+  <div class="logos grid-2">
+   <img src="logo-coca.png" alt="Coca-Cola">
+   <img src="logo-danone.png" alt="Danone">
+   <img src="logo-leroy.png" alt="Leroy Merlin">
+  </div>
+ </section>
+ <section class="method">
+  <h2>Método – SISTEMA ALINEADO™</h2>
+  <div class="grid-4">
+   <div>
+    <h3>Diagnóstico</h3>
+    <p>Claridad brutal de tu situación actual</p>
+   </div>
+   <div>
+    <h3>Dirección</h3>
+    <p>Estrategia personalizada y sin ruido</p>
+   </div>
+   <div>
+    <h3>Diseño</h3>
+    <p>Producto, marca y oferta coherentes</p>
+   </div>
+   <div>
+    <h3>Ejecución</h3>
+    <p>Plan con IA y soporte real</p>
+   </div>
+  </div>
+ </section>
+ <section class="testimonials">
+  <h2>Testimonios Reales</h2>
+ <div class="grid-2">
+  <div class="testimonial">
+   <img src="avatar-juan.jpg" alt="Juan">
+   <p><strong>Juan – 20K en 6 semanas</strong><br>"Volví a disfrutar de crear sabiendo que estaba construyendo algo rentable."</p>
+  </div>
+  <div class="testimonial">
+   <img src="avatar-laura.jpg" alt="Laura">
+   <p><strong>Laura – 15K en 4 semanas</strong><br>"Por fin entendí cómo dirigir mi audiencia hacia ofertas reales."</p>
+  </div>
+ </div>
+ </section>
+ <section class="audience">
+  <h2>¿Para quién es / no es?</h2>
+  <div class="grid-2">
+   <div>
+    <h3>Es para ti si</h3>
+    <ul>
+     <li>tienes +10k seguidores</li>
+     <li>ya has intentado monetizar</li>
+     <li>buscas estrategia real</li>
+    </ul>
+   </div>
+   <div>
+    <h3>No es para ti si</h3>
+    <ul>
+     <li>buscas fórmulas mágicas</li>
+     <li>solo quieres más likes</li>
+     <li>no piensas construir algo serio</li>
+    </ul>
+   </div>
+  </div>
+ </section>
+ <section class="before-after">
+  <h2>Antes / Después</h2>
+  <div class="grid-2">
+   <div>
+    <h3>Antes</h3>
+    <ul>
+     <li>Caos e improvisación</li>
+     <li>Ingresos inestables</li>
+    </ul>
+   </div>
+   <div>
+    <h3>Después</h3>
+    <ul>
+     <li>Claridad y sistema</li>
+     <li>Rentabilidad mensual</li>
+    </ul>
+   </div>
+  </div>
+ </section>
+ <section class="compare">
+  <h2>Mentoría típica vs Estrategia real</h2>
+  <table>
+   <tr><th></th><th>Mentoría típica</th><th>Estrategia real</th></tr>
+   <tr><td>Motivación</td><td>A corto plazo</td><td>A construir negocio</td></tr>
+   <tr><td>Dirección</td><td>Genérica</td><td>Personalizada</td></tr>
+   <tr><td>Personalización</td><td>Baja</td><td>Alta</td></tr>
+  </table>
+ </section>
+ <section class="investment">
+  <p>No es un gasto. Es una inversión pequeña comparada con el retorno que puedes generar si aplicamos con foco lo que diseñemos juntos.</p>
+ </section>
+ <footer id="apply">
+  <h2>Solo trabajo con 5 creadores al mes.</h2>
+  <p>Si quieres claridad, estructura y resultados reales, este es tu momento.</p>
+  <p>Si has leído hasta aquí, probablemente ya sabes que esto es para ti. Esta llamada puede darte la claridad que llevas meses buscando.</p>
+  <a href="#" class="cta-btn">Aplicar al diagnóstico</a>
+ </footer>
+ <a href="#" class="cta-btn sticky-cta">Aplicar al diagnóstico</a>
+</body>
+</html>
++
